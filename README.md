@@ -20,5 +20,5 @@ __Currently added functions:__
 
 ## Setup
 
-The module is build with maven. All dependencies are availabe in mcn central repository except for the FirstSpirit-libraries. You have to manually add them to your local repository or provide a repository in the pom.xml that contains the libraries.
+The module is build with maven. All dependencies are availabe in mvn central repository except for the FirstSpirit-libraries. You have to manually add them to your local repository or provide a repository in the pom.xml that contains the libraries.
 Use _mvn clean install_ to build the fsm and _mvn eclipse:eclipse_ to create an eclipse-project.
