@@ -16,7 +16,7 @@ __Currently added functions:__
       
 - ProjectGroups-Hotspot: A hotspot for Option-based gom-elements that provides the groups of the current project
 
-- PermissionValueService: A value-service that allows you to perform permission-based actions in forms, e. g. hide fields for specifiv groups. It's a simple ValueService - therefore you can easily extend it or use it as a template for building ValueServices.
+- GroupRestrictionValueService: A value-service that allows you to perform permission-based actions in forms, e. g. hide fields for specifiv groups. It's a simple ValueService - therefore you can easily extend it or use it as a template for building ValueServices.
 
 ## Setup
 
