@@ -30,12 +30,8 @@ public final class SVGWindow {
 
 	private static final Class<?> LOGGER = SVGWindow.class;
 
-	private static final SVGWindow SELF = new SVGWindow();
-
 	private final String CANCEL_COMMAND = "Close";
 
-	private final ImageIcon icon;
-	private final ImageIcon imageIconPressed;
 	private final Dimension screenSize;
 
 	private ToolbarContext context;
@@ -43,20 +39,9 @@ public final class SVGWindow {
 	private JFrame window;
 	private JButton cancelButton;
 
-	private SVGWindow() {
-		icon = new ImageIcon(this.getClass().getResource("/icon.png"));
-		imageIconPressed = new ImageIcon(
-		        this.getClass().getResource("/icon-pressed.png"));
-		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-	}
+	public SVGWindow() {
 
-	/**
-	 * Gets instance.
-	 *
-	 * @return the instance
-	 */
-	public static SVGWindow getInstance() {
-		return SELF;
+		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	}
 
 	/**
@@ -93,9 +78,6 @@ public final class SVGWindow {
 
 			JPanel mainPane = new JPanel();
 
-			int width = window.getPreferredSize().width - 20;
-			int height = window.getPreferredSize().height - 20;
-
 			Logging.logInfo("Drawing SVG", LOGGER);
 
 			InputStream is = PluginHelper.loadCurrentElement(context);
@@ -116,7 +98,6 @@ public final class SVGWindow {
 	private JFrame setupFrame(final String projectName) {
 		final String appName = createAppName(projectName);
 		final JFrame frame = new JFrame(appName);
-		frame.setIconImage(icon.getImage());
 		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
 		// Dynamic size
@@ -151,25 +132,6 @@ public final class SVGWindow {
 			JOptionPane.showMessageDialog(null, "Error while showing SVG-Image",
 			        "Error", JOptionPane.ERROR_MESSAGE);
 		}
-	}
-
-	/**
-	 * Gets icon.
-	 *
-	 * @return the icon
-	 */
-	public ImageIcon getIcon() {
-		return icon;
-	}
-
-	/**
-	 * Gets image icon pressed.
-	 *
-	 * @return the image icon pressed
-	 */
-
-	public ImageIcon getImageIconPressed() {
-		return imageIconPressed;
 	}
 
 	private class ClickListener implements ActionListener {

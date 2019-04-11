@@ -1,6 +1,7 @@
 package com.reinhold.fs.plugins;
 
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 import de.espirit.firstspirit.client.plugin.toolbar.ExecutableToolbarItem;
 import de.espirit.firstspirit.client.plugin.toolbar.ToolbarContext;
@@ -10,18 +11,15 @@ import de.espirit.firstspirit.client.plugin.toolbar.ToolbarContext;
  */
 public final class SVGViewerPluginToolbarItem implements ExecutableToolbarItem {
 
-	private final SVGWindow window;
-
 	/**
 	 * Instantiates a new ConventionViewToolbarItem.
 	 */
 	public SVGViewerPluginToolbarItem() {
-		window = SVGWindow.getInstance();
 	}
 
 	@Override
 	public void execute(final ToolbarContext context) {
-		window.show(context);
+		new SVGWindow().show(context);
 	}
 
 	@Override
@@ -41,16 +39,16 @@ public final class SVGViewerPluginToolbarItem implements ExecutableToolbarItem {
 
 	@Override
 	public Icon getIcon(final ToolbarContext context) {
-		return window.getIcon();
+		return new ImageIcon(this.getClass().getResource("/icon.png"));
 	}
 
 	@Override
 	public Icon getPressedIcon(final ToolbarContext context) {
-		return window.getImageIconPressed();
+		return new ImageIcon(this.getClass().getResource("/icon-pressed.png"));
 	}
 
 	@Override
 	public Icon getRollOverIcon(final ToolbarContext context) {
-		return window.getIcon();
+		return new ImageIcon(this.getClass().getResource("/icon.png"));
 	}
 }

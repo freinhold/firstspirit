@@ -6,6 +6,10 @@
     <vendor>${project.organization.name}</vendor>
 	<components>
 		<public>
+			<name>ProjectGroupsHotspot</name>
+			<class>com.reinhold.fs.hotspot.ProjectGroupsHotspot</class>
+		</public>
+		<public>
 			<name>SVGViewerPlugin</name>
 			<class>com.reinhold.fs.plugins.SVGViewerPlugin</class>
 		</public>

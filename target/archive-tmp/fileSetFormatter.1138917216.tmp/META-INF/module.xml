@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>FirstSpirit extensions</name>
+    <version>2019-03_4</version>
+    <description>FirstSpirit Extensions</description>
+    <vendor>Felix Reinhold ITDC</vendor>
+	<components>
+		<public>
+			<name>ProjectGroupsHotspot</name>
+			<class>com.reinhold.fs.hotspot.ProjectGroupsHotspot</class>
+		</public>
+		<public>
+			<name>SVGViewerPlugin</name>
+			<class>com.reinhold.fs.plugins.SVGViewerPlugin</class>
+		</public>
+		<public>
+			<name>SVGPreviewImagePlugin</name>
+			<class>com.reinhold.fs.plugins.SVGPreviewImagePlugin</class>
+		</public>
+		<!-- library -->
+		<library>
+			<name>FirstSpirit extensions library</name>
+			<description>Library for FirstSpirit extensions</description>
+			<resources>
+				<resource>lib/fs-extensions-2019-03_4.jar</resource>			
+				<resource>lib/batik-anim-1.11.jar</resource>
+				<resource>lib/batik-css-1.11.jar</resource>
+				<resource>lib/batik-gvt-1.11.jar</resource>
+				<resource>lib/batik-svg-dom-1.11.jar</resource>
+				<resource>lib/batik-xml-1.11.jar</resource>
+				<resource>lib/log4j-1.2.17.jar</resource>
+				<resource>lib/xml-apis-ext-1.3.04.jar</resource>
+				<resource>lib/batik-awt-util-1.11.jar</resource>
+				<resource>lib/batik-dom-1.11.jar</resource>
+				<resource>lib/batik-i18n-1.11.jar</resource>
+				<resource>lib/batik-svggen-1.11.jar</resource>
+				<resource>lib/commons-io-2.6.jar</resource>
+				<resource>lib/serializer-2.7.2.jar</resource>
+				<resource>lib/xmlgraphics-commons-2.3.jar</resource>
+				<resource>lib/batik-bridge-1.11.jar</resource>
+				<resource>lib/batik-ext-1.11.jar</resource>
+				<resource>lib/batik-parser-1.11.jar</resource>
+				<resource>lib/commons-logging-1.0.4.jar</resource> 
+				<resource>lib/xalan-2.7.2.jar</resource>
+				<resource>lib/batik-constants-1.11.jar</resource>
+				<resource>lib/batik-script-1.11.jar</resource>
+				<resource>lib/batik-util-1.11.jar</resource>
+				<resource>lib/xml-apis-1.3.04.jar</resource>
+				<resource>lib/batik-transcoder-1.11.jar</resource>
+				<resource>lib/batik-codec-1.11.jar</resource>
+			</resources>
+		</library>
+	</components>
+</module>
