@@ -1,7 +1,5 @@
-# firstspirit
-
 ------------------------------
-__FirstSpirit Extensions__
+# FirstSpirit Extensions
 ------------------------------
 
 
