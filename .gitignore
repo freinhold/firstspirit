@@ -10,3 +10,4 @@ target/
 .git/
 .project
 .classpath
+.github
