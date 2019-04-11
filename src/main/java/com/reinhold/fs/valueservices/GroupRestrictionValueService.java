@@ -18,9 +18,9 @@ import de.espirit.firstspirit.service.value.ValueService;
  * member of one of those groups, otherwise it returns false. With this
  * value-service you can hide/show single gom-form elements for specific groups.
  */
-public class PermissionValueService implements ValueService {
+public class GroupRestrictionValueService implements ValueService {
 
-	public PermissionValueService() {
+	public GroupRestrictionValueService() {
 	}
 
 	@Override

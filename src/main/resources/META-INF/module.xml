@@ -17,6 +17,10 @@
 			<name>SVGPreviewImagePlugin</name>
 			<class>com.reinhold.fs.plugins.SVGPreviewImagePlugin</class>
 		</public>
+		<public>
+			<name>GroupRestrictionValueService</name>
+			<class>com.reinhold.fs.valueservices.GroupRestrictionValueService</class>
+		</public>
 		<!-- library -->
 		<library>
 			<name>${project.name} library</name>
