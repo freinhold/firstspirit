@@ -3,7 +3,7 @@
 ## Information
 
 In this module I add small snippets that are released for public.
-You shouldn't use the whole module as it is, cause the build has a pretty old and not perfect setup and the functions don't have any relation to each other. Just extrat the functions you need and add them to your own modules.
+You shouldn't use the whole module as it is, cause the build has a pretty old and not perfect setup and the functions don't have any relation to each other. Just extract the functions you need and add them to your own modules.
 
 ## Contents
 
