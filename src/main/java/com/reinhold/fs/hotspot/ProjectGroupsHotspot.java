@@ -11,7 +11,7 @@ public class ProjectGroupsHotspot implements GomIncludeValueProvider<Group> {
 
 	@Override
 	public String getKey(Group group) {
-		return String.valueOf(group.getId());
+		return group.getName();
 	}
 
 	@Override
