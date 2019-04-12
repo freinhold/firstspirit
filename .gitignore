@@ -10,3 +10,5 @@ target/
 .git/
 .project
 .classpath
+/bin/
+.github
